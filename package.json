@@ -2,35 +2,39 @@
   "name": "spotify-ui",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
+    "dev": "next dev",
+    "fmt": "pnpm format",
     "format": "prettier --write .",
-    "fmt": "pnpm format"
-  },
-  "dependencies": {
-    "lucide-react": "^0.145.0",
-    "next": "^13.3.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "^18.15.11",
-    "@types/react": "^18.0.35",
-    "@types/react-dom": "^18.0.11",
-    "autoprefixer": "^10.4.14",
-    "eslint": "^8.38.0",
-    "eslint-config-next": "^13.3.0",
-    "postcss": "^8.4.21",
-    "prettier": "^2.8.7",
-    "tailwindcss": "^3.3.1",
-    "typescript": "~5.0.4"
+    "lint": "next lint",
+    "start": "next start"
   },
   "prettier": {
-    "singleQuote": true,
-    "trailingComma": "all",
     "printWidth": 120,
-    "tabWidth": 2
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all"
+  },
+  "eslintConfig": {
+    "extends": "next/core-web-vitals"
+  },
+  "dependencies": {
+    "lucide-react": "^0.216.0",
+    "next": "^13.4.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sharp": "^0.32.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.8",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.40.0",
+    "eslint-config-next": "^13.4.2",
+    "postcss": "^8.4.23",
+    "prettier": "^2.8.8",
+    "tailwindcss": "^3.3.2",
+    "typescript": "~5.0.4"
   }
 }
